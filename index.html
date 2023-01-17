@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+img {
+  height: 120px;
+  position: absolute;
+  top: 500px;
+animation: 52s sun infinite;
+}
+@keyframes sun {
+0% {transform: translate(0px, 0px); animation-timing-function: linear;}
+20% {transform: translate(500px, -150px); animation-timing-function: linear;}
+30% {transform: translate(550px, -200px); animation-timing-function: linear;}
+40% {transform: translate(700px, -250px);  animation-timing-function: linear;}
+60% {transform: translate(900px, -250px); animation-timing-function: linear;}
+70% {transform: translate(950px, -200px); animation-timing-function: linear;}
+90% {transform: translate(1200px, -150px); animation-timing-function: linear;}
+100% {transform: translate(1500px, 0px); animation-timing-function: linear;}
+}
+@keyframes car1 {
+  0% {transform: translateX(2000%) ; }
+  100% {transform: translateX(-300%); }
+}
+@keyframes cloud {
+  0% {transform: translateX(-200%) ; }
+  50% {transform: translateX(600%) ; animation-delay: 9s;}
+  100% {transform: translateX(1500%); }
+}
+@keyframes rain {
+  0% {transform: translatey(-150%); opacity: 0;}
+  20% {transform: translatey(80%); opacity: 1;}
+  40% {transform: translatey(160%); opacity: 1;}
+  50% {transform: translatey(200%); opacity: 1;}
+  60% {transform: translatey(300%); opacity: 1;}
+  70% {transform: translatey(400%); opacity: 1;}
+  80% {transform: translatey(500%); opacity: 1;}
+  90% {transform: translatey(600%); opacity: 1;}
+  100% {transform: translatey(1500%); opacity: 1;}
+}
+.house {
+  transform: none;
+  animation: none;
+  height: 400px;
+  margin-left: 700px;
+  top: 400px;
+}
+.car1 {
+  animation: 10s car1 infinite;
+  top: 700px;
+}
+.cloud1 {
+  animation: 30s cloud infinite;
+  top: 325px;
+}
+.cloud2 {
+  animation: 37s cloud infinite;
+  top: 330px;
+}
+.cloud3 {
+  animation: 38s cloud infinite;
+  top: 320px;
+}
+.cloud4 {
+  animation: 42s cloud infinite;
+  top: 303px;
+}
+.cloud5 {
+  animation: 29s cloud infinite;
+  top: 318px;
+}
+.cloud6 {
+  animation: 48s cloud infinite;
+  top: 315px;
+}
+.cloud7 {
+  animation: 45s cloud infinite;
+  top: 308px;
+}
+.cloud8 {
+  animation: 28s cloud infinite;
+  top: 310px;
+}
+.cloud9 {
+  animation: 50s cloud infinite;
+  top: 305px;
+}
+.rain {
+  width: 830px;
+  top: 395px;
+  position: relative;
+}
+.rain img {
+  position: unset;
+  height: 8px;
+  float: right;
+  /* margin-left: 700px; */
+  padding: 6px;
+  opacity: 0;
+}
+.rain1 {animation: 6s rain ; top:480px; animation-delay: 12s;}
+.rain2 {animation: 5s rain ; top:480px; animation-delay: 12s;}
+.rain3 {animation: 4s rain ; top:480px; animation-delay: 11s;}
+.rain4 {animation: 3s rain ; top:480px; animation-delay: 10s;}
+.rain5 {animation: 2s rain ; top:485px; animation-delay: 12s;}
+.rain6 {animation: 6s rain ; top:485px; animation-delay: 12s;}
+.rain7 {animation: 3s rain ; top:485px; animation-delay: 13s;}
+.rain8 {animation: 4s rain ; top:485px; animation-delay: 12s;}
+.rain9 {animation: 4s rain ; top:485px; animation-delay: 13s;}
+.rain10 {animation: 3s rain ; top:485px; animation-delay: 10s;}
+.rain11 {animation: 5s rain ; top:485px; animation-delay: 10s;}
+.rain12 {animation: 6s rain ; top:485px; animation-delay: 10s;}
+.rain13 {animation: 7s rain ; top:485px; animation-delay: 10s;}
+
+    </style>
+  </head>
+<body>
+  <div>
+    <img src="sun.svg" class="sun">
+  </div>
+  <div>
+      <img src="house.svg" class="house">
+  </div>
+  <div>
+    <img class="car1" src="Car_Left_Red.png">
+  </div>
+  <div>
+    <img class="cloud1" src="cloud.png">
+    <img class="cloud2" src="cloud.png">
+    <img class="cloud3" src="cloud.png">
+    <img class="cloud4" src="cloud.png">
+    <img class="cloud5" src="cloud.png">
+    <img class="cloud6" src="cloud.png">
+    <img class="cloud7" src="cloud.png">
+    <img class="cloud8" src="cloud.png">
+    <img class="cloud9" src="cloud.png">
+
+  </div>
+  <div class="rain">
+      <img class="rain1" src="drop.png">
+      <img class="rain2" src="drop.png">
+      <img class="rain3" src="drop.png">
+      <img class="rain4" src="drop.png">
+      <img class="rain5" src="drop.png">
+      <img class="rain6" src="drop.png">
+      <img class="rain7" src="drop.png">
+      <img class="rain8" src="drop.png">
+      <img class="rain9" src="drop.png">
+      <img class="rain10" src="drop.png">
+      <img class="rain11" src="drop.png">
+      <img class="rain12" src="drop.png">
+      <img class="rain13" src="drop.png">
+  </div>
+</body>
+</html>
